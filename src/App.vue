@@ -1,38 +1,17 @@
 <template>
   <div id="app">
-    <scanner></scanner>
+    <div id="nav">
+      <router-link to="/about/">About</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
 
-<script>
-import scanner from './components/Scanner'
+<style>
 
+</style>
+<script>
 export default {
-  name: 'App',
-  components: {
-    scanner
-  }
+  name: 'app',
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 0;
-}
-
-    *
-{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body{
-    margin: 0;
-    overflow-x: hidden;
-}
-</style>
