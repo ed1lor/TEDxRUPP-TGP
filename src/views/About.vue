@@ -12,13 +12,14 @@
 </template>
 
 <script>
+//qrcodevue library for generating qrcode
 import QrcodeVue from 'qrcode.vue'
 import HelloWorld from '../components/HelloWorld'
 export default {
    props: ["name"],
      data() {
       return {
-        value: this.name,
+        value: this.name, //for getting value from 'name', which is the router path (can be modified in index.js)
         size: 300,
       }
     },
